@@ -1,5 +1,5 @@
 import React from 'react';
-import {BiCheck} from 'react-icons/bi';
+import { BiCheck } from 'react-icons/bi';
 
 const Service = props => {
   return (
@@ -29,7 +29,8 @@ const Services = () => {
     'User Research',
     'Design implementation',
   ];
-  const webDevServiceList = ['ReactJs', 'Web app', 'Websites', 'HTML', 'CSS', 'Javascript'];
+  const webDevServiceList = ['ReactJS', 'Flutter', 'Web app', 'Websites', 'HTML', 'CSS', 'Javascript'];
+  const backendServiceList = ['PHP', 'Python', 'DJango', 'Laravel', 'RESTful APIs', 'Security', 'MySQL', 'SQL'];
 
   return (
     <section className='services' id='services'>
@@ -38,6 +39,7 @@ const Services = () => {
       <div className='services__container'>
         <Service title='UX/UI Design' serviceList={uxUiSerivesList} />
         <Service title='Front-end Development' serviceList={webDevServiceList} />
+        <Service title='Backend Development' serviceList={backendServiceList} />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BsPatchCheckFill} from 'react-icons/bs';
+import { BsPatchCheckFill } from 'react-icons/bs';
 
 const Skill = props => {
   return (
@@ -27,8 +27,23 @@ const Experiences = () => {
           <Skill title='SASS' level='Intermediate' />
           <Skill title='Bootstrap' level='Experienced' />
           <Skill title='React' level='Intermediate' />
+          <Skill title='Flutter' level='Experienced' />
+          <Skill title='Kotlin' level='Intermediate' />
           <Skill title='Figma' level='Experienced' />
           <Skill title='UI/UX Design' level='Intermediate' />
+        </div>
+      </div>
+      <div className='experience'>
+        <h3>Backend Developemnt</h3>
+        <div className='experience__details'>
+          <Skill title='PHP' level='Experienced' />
+          <Skill title='RESTful APIs' level='Experienced' />
+          <Skill title='Python' level='Experienced' />
+          <Skill title='DJango' level='Intermediate' />
+          <Skill title='Laravel' level='Experienced' />
+          <Skill title='MySQL' level='Intermediate' />
+          <Skill title='SQL' level='Experienced' />
+          <Skill title='Security' level='Intermediate' />
         </div>
       </div>
     </section>

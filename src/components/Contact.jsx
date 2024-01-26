@@ -1,6 +1,6 @@
 import React from 'react';
-import {HiOutlineMail} from 'react-icons/hi';
-import {SiWhatsapp} from 'react-icons/si';
+import { HiOutlineMail } from 'react-icons/hi';
+import { SiWhatsapp } from 'react-icons/si';
 
 const Contact = () => {
   return (
@@ -12,8 +12,8 @@ const Contact = () => {
           <article className='contact__option'>
             <HiOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
-            <h5>joash.bara.sa@gmail.com</h5>
-            <a href='mailto:joash.bara.sa@gmail.com' target='_blank'>
+            <h5>khaembajoash1@gmail.com</h5>
+            <a href='mailto:khaembajoash1@gmail.com' target='_blank'>
               Send an email
             </a>
           </article>

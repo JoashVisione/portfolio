@@ -1,10 +1,9 @@
 import React from 'react';
 import profile from '../images/profile.jpg';
 
-import {TbAward} from 'react-icons/tb';
-import {RiProjectorLine} from 'react-icons/ri';
-import {AiOutlineUsergroupAdd} from 'react-icons/ai';
-import {TbDownload} from 'react-icons/tb';
+import { AiOutlineUsergroupAdd } from 'react-icons/ai';
+import { RiProjectorLine } from 'react-icons/ri';
+import { TbAward, TbDownload } from 'react-icons/tb';
 
 const Item = props => {
   return (
@@ -27,15 +26,15 @@ const About = () => {
         </div>
         <div className='about__me'>
           <div className='items'>
-            <Item icon={TbAward} title='Experience' description='2+ years of developemnt' />
-            <Item icon={RiProjectorLine} title='Projects' description='15+ completed' />
+            <Item icon={TbAward} title='Experience' description='5+ years of software developemnt' />
+            <Item icon={RiProjectorLine} title='Projects' description='10+ completed' />
             <Item icon={AiOutlineUsergroupAdd} title='Clients' description='100+ happy' />
           </div>
           <p>
-            I'm a professional Front-end engineer dedicated to delivering the best services to my
-            clients in time while meeting all the project specifications.
+          I'm a Full Stack Developer who is highly motivated and results-oriented with a knack for building user-friendly and scalable applications. My main focus is building robust cross-platform mobile apps and interactive web applications.
+          
           </p>
-          <a href='' className='btn btn__primary' download>
+          <a href='https://docs.google.com/document/d/1rzrW1kfVHYbYTWDnTUSH0AZSuj5pZ99wOJmWXWFJG_I/export?format=pdf' className='btn btn__primary' download>
             <TbDownload /> Download CV
           </a>
         </div>

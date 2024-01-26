@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <header>
       <div className='header_container'>
-        <h4>Hello there, I'm</h4>
+        <h4>Hello there, I am</h4>
         <h1>Joash Barasa,</h1>
-        <h4>a Front-end Engineer</h4>
+        <h4>a Full Stack Developer</h4>
         <CTA />
         <div className='profile'></div>
         <HeaderSocials />

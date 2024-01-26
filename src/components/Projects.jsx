@@ -1,11 +1,13 @@
 import React from 'react';
 
+import bookeeper from '../images/bookeeper.png';
+import cbc from '../images/cbc.png';
+import cff from '../images/cff.png';
+import dashboard from '../images/dashboard.png';
+import find from '../images/find.png';
+import intro from '../images/intro.png';
 import littleLemon from '../images/littlelemon.png';
 import portfolio from '../images/portfolio.png';
-import bookeeper from '../images/bookeeper.png';
-import find from '../images/find.png';
-import dashboard from '../images/dashboard.png';
-import intro from '../images/intro.png';
 
 // Destructure props into 'project' object
 const Project = ({project}) => {
@@ -18,10 +20,10 @@ const Project = ({project}) => {
       <div className='cta'>
         {/* add links to projectList array(github and or live demo) */}
         <a href={project.link} className='btn' target='_blank'>
-          Github
+          Live/Demo
         </a>
         <a href='#contact' className='btn btn__primary'>
-          Contact for Demo
+          Contact
         </a>
       </div>
     </article>
@@ -31,14 +33,24 @@ const Project = ({project}) => {
 const Projects = () => {
   const projectList = [
     {
-      title: 'Little Lemon',
-      image: littleLemon,
+      title: 'CBC Grade 1-6 Revision App',
+      image: cbc,
+      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/little-lemon',
+    },
+    {
+      title: 'Chicken Feed Formulator App',
+      image: cff,
       link: 'https://github.com/JoashVisione/front-end-dev/tree/master/little-lemon',
     },
     {
       title: 'Portfolio',
       image: portfolio,
-      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/react-portfolio',
+      link: 'https://joashvisione.github.io/portfolio',
+    },
+    {
+      itle: 'Dashboard',
+      image: dashboard,
+      link: 'https://joashvisione.github.io/admin-dashboard',
     },
     {
       title: 'Bookeeper',
@@ -51,14 +63,14 @@ const Projects = () => {
       link: 'https://github.com/JoashVisione/front-end-dev/tree/master/web-one-from-design',
     },
     {
-      title: 'Intro to Figma',
-      image: intro,
-      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/my-first-website-based-on-figma-design',
+      title: 'Little Lemon',
+      image: littleLemon,
+      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/little-lemon',
     },
     {
-      itle: 'Dashboard',
-      image: dashboard,
-      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/dashboard',
+      title: 'Intro to Figma and web design',
+      image: intro,
+      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/my-first-website-based-on-figma-design',
     },
   ];
 
