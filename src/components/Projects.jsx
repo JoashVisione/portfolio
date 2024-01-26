@@ -35,12 +35,12 @@ const Projects = () => {
     {
       title: 'CBC Grade 1-6 Revision App',
       image: cbc,
-      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/little-lemon',
+      link: 'https://play.google.com/store/apps/details?id=com.visionelabs.cbcgrade16revision',
     },
     {
       title: 'Chicken Feed Formulator App',
       image: cff,
-      link: 'https://github.com/JoashVisione/front-end-dev/tree/master/little-lemon',
+      link: 'https://play.google.com/store/apps/details?id=com.visionelabs.chickenff',
     },
     {
       title: 'Portfolio',
