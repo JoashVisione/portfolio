@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+:root {
+  --clr-bg: #1f1f38;
+  --clr-bg-variant: #2c2c6c;
+  --clr-primary: #4db5ff;
+  --clr-primary-variant: rgba(77, 181, 255, 0.4);
+  --clr-white: #ffffff;
+  --clr-light: rgba(255, 255, 255, 0.6);
+
+  --clr-dark: rgba(0, 0, 0, 0.3);
+
+  --container-desktop: 75%;
+  --container-tablet: 86%;
+  --container-mobile: 90%;
+
+  --transtion: all 400ms ease;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* remove scroll bars */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-white);
+  line-height: 1.7;
+  position: relative;
+}
+
+/* General styles */
+.container {
+  width: var(--container-desktop);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 0.9rem;
+}
+
+section {
+  margin-top: 8rem;
+  /* height: 100vh; */
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(--clr-light);
+}
+
+section > h2 {
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+}
+
+.txt-light {
+  color: var(--clr-light);
+}
+
+a {
+  color: var(--clr-primary);
+  transition: var(--transtion);
+}
+
+a:hover {
+  color: var(--clr-white);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--clr-primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 1px solid var(--clr-primary);
+  transition: var(--transtion);
+}
+
+.btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-bg);
+  border-color: transparent;
+}
+
+.btn__primary {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-tablet);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-mobile);
+  }
+
+  section {
+    margin-top: 4rem;
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
