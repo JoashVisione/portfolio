@@ -2,7 +2,28 @@ import React from 'react';
 import { HiOutlineMail } from 'react-icons/hi';
 import { SiWhatsapp } from 'react-icons/si';
 
+// emailjs
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
 const Contact = () => {
+  const form = useRef();
+  //sending email
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('react-portfolio', 'template_xioz13y', form.current, '1Qljg5Bvp7vpBn3Pg')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      //clear fields
+      e.target.reset();
+  };
+
+
   return (
     <section className='contact' id='contact'>
       <h5>Get in touch</h5>
@@ -12,7 +33,7 @@ const Contact = () => {
           <article className='contact__option'>
             <HiOutlineMail className='contact__option-icon' />
             <h4>Email</h4>
-            <h5>khaembajoash1@gmail.com</h5>
+            <h5>khaem*****@gmail.com</h5>
             <a href='mailto:khaembajoash1@gmail.com' target='_blank'>
               Send an email
             </a>
@@ -20,13 +41,13 @@ const Contact = () => {
           <article className='contact__option'>
             <SiWhatsapp className='contact__option-icon' />
             <h4>Whatsapp</h4>
-            <h5>+2579*******</h5>
-            <a href='https://api.whatsapp.com/send?phone+2549********' target='_blank'>
+            <h5>+254101******</h5>
+            <a href='https://api.whatsapp.com/send?phone+254101154502' target='_blank'>
               Send a message
             </a>
           </article>
         </div>
-        <form action='' method='post'>
+        <form ref={form} onSubmit={sendEmail}>
           <input type='text' name='name' placeholder='Enter your name' required />
           <input type='email' name='email' placeholder='Enter your email address' required />
           <textarea name='message' rows='7' placeholder='Your message' required></textarea>

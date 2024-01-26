@@ -143,6 +143,7 @@ nav a.active {
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
+  margin-bottom: 2rem;
 }
 
 .experience:hover {
